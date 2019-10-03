@@ -10,11 +10,10 @@ import axios from 'axios'
 export default {
   name: 'home',
   components: {
-    
   },
   created () {
-    axios.get('/data.json').then((res)=>{
-      console.log(res);
+    axios.get('/data.json').then((res) => {
+      console.log(res)
     })
   }
 }
